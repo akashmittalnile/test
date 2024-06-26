@@ -1,0 +1,102 @@
+/*----------------------------
+         Add CSS file
+----------------------------*/
+@import "../plugins/bootstrap/css/bootstrap.min.css";
+@import '../plugins/line-awesome/css/line-awesome.css';
+@import '../plugins/OwlCarousel/css/owl.carousel.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*----------------------------
+   element      
+----------------------------*/
+
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+html { text-rendering: optimizeLegibility !important;-webkit-font-smoothing: antialiased !important;}
+*{margin:0; padding:0}
+a{ text-decoration:none;}
+a:hover{ text-decoration:none !important;}
+header, nav, section, article, aside, footer { display:block;}
+html {font-size: 100%;}
+body {font-size: 12px; background:#F8F8F9;font-family: 'Roboto', sans-serif;;line-height: 26px;color: #455A64;-webkit-font-smoothing: antialiased;font-weight: normal;}
+h1, h2, h3, h4, h5, h6 {padding: 5px 0 15px 0;color: #333;font-weight: normal;-webkit-font-smoothing: antialiased;}
+:-ms-input-placeholder{color: #000;}
+
+/*----------------------------
+   auth      
+----------------------------*/
+.auth-section {display: flex; align-items: center; height: 100vh; } 
+.auth-section .container {max-width: 75%; }
+.auth-content {padding: 10px;position: relative;text-align: center;border-radius: 0  15px 15px 0;background: #fdfbed;background-size: cover;background-position: center;} 
+.auth-content:after {background:; content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; border-radius: 15px 0 0 15px;background-size: 100%;background-position: bottom;background-repeat: no-repeat;}
+.auth-content-info {position: relative; z-index: 1; }
+.auth-card {background: #fff;box-shadow: 0px 8px 13px rgb(0 0 0 / 5%);border-radius: 15px;position: relative;}
+.brand-logo{margin-bottom: 2rem;text-align: left;}
+.brand-logo img {height: 33px;}
+
+
+.auth-form-info{/* margin: 0px; *//* padding: 0px; *//* display: flex; *//* align-items: center; *//* flex-wrap: wrap; */} 
+.auth-form {padding: 35px 30px 35px 55px;width: 100%;min-height: 450px;max-width: 580px;}
+.auth-form  h2 {font-size: 24px;font-weight: 300;color: #455A64;margin: 0;padding: 0;}
+.auth-form  p {font-size:14px;font-weight: 300;color: #B2B7B9;margin: 0;padding: 0;}
+.signuplink {font-size: 14px; font-weight: 300; color: #455A64; margin: 0; padding: 10px 0; text-align: center; }
+.signuplink a{ color:#29913C;  text-decoration: underline;}
+
+
+a.auth-link{font-size: 0.875rem; margin: 0; color: #ffcc00; font-weight: normal; }
+
+.auth-form .form-group {margin-bottom: 1rem; }
+.auth-form .form-group label {color: #fff; font-size: 14px; font-weight: 600; }
+.auth-form input.form-control {background: transparent;border-radius: 5px;font-size: 13px;border: 1px solid #fdce0229;font-weight: 400;height: auto;padding: 0.94rem 0.94rem;box-shadow: 0 5px 13px rgb(240 240 241 / 46%);outline: 0;width: 100%;display: inline-block;color: #455A64;}
+.auth-form input.form-control:focus {border: 1px solid #29913c;}
+
+.choose-services-list {margin: 0;padding: 0;list-style: none;}
+.choose-services-list li {display: inline-block; margin: 5px; }
+
+
+.servicescheckbox input[type=checkbox]+label{background-color:#fff;padding: 10px 45px 10px 10px;display:inline-block;position:relative;color: #333333;cursor: pointer;font-size: 13px;font-weight: bold;width: 100%;}
+.servicescheckbox input[type="checkbox"]{position:absolute;opacity:0;z-index:1}
+.servicescheckbox input[type=checkbox]+label{}
+.servicescheckbox input[type=checkbox]:checked+label:before{display:block}
+.servicescheckbox input[type=checkbox]+label:after {content: ' ';width: 100%;position: absolute;top: 0;left: 0;height: 100%;border: 1px solid transparent;box-shadow: 0 0 10px #efecec;border-radius: 5px;}
+.servicescheckbox input[type=checkbox]+label:before{content:' ';border-radius:5px;width: 100%;position:absolute;top:0;left:0;z-index:1;height: 100%;display:none;border: 1px solid #29913c;display:none;}
+.servicescheckbox input[type=checkbox]:checked+label .order-type-text i {color: #5968d9; border-color: #5968d9; }
+.servicescheckbox input[type=checkbox]:checked+label .order-type-text {color: #5968d9; }
+.servicescheckbox input[type="checkbox"]:checked + label .checkbox-circle-mark:before {border: 2px solid #004A8E; } 
+.servicescheckbox input[type="checkbox"]:checked + label .checkbox-circle-mark:after {display: block; }
+.servicescheckbox input[type="checkbox"]:checked + label span.checkbox-circle-mark {background: #29913c;position: absolute;height: 24px;width: 24px;display: inline-block;border-radius: 50%;text-align: center;right: 5px;top: 10px;}
+.servicescheckbox input[type="checkbox"]:checked + label span.checkbox-circle-mark:after{content:"\f00c"; position: absolute;font-family: 'Line Awesome Free';
+    font-weight: 900;font-size: 14px;text-align: center;line-height: 24px;left: 0;right: 0;color: #fff;}
+.gender-option-text {font-size: 14px; text-align: center; margin: 5px 0 0 0; font-weight: 600; color: #263238; }
+
+
+
+
+
+button.auth-form-btn {outline: none;border: none;background: #29913C;padding: 12px 40px;display: inline-block;color: #fff;font-size: 14px;font-weight: 600;border-radius: 50px;box-shadow: 0 8px 13px rgb(9 84 149 / 10%);}
+.note-msg-info {background: #fbfbfb; display: inline-block; font-size: 12px; border-radius: 10px; line-height: 20px; color: #455A64; position: relative; padding: 8px 8px 8px 45px; }
+.note-msg-info i {position: absolute; left: 8px; font-size: 30px; top: 14px; }
+.forgotpsw-text a {font-size: 14px; color: #004a8e; }
+
+
+.auth-slider-item {position: relative; }
+.auth-slider-text {position: absolute; bottom: 10%; padding: 2rem }
+.auth-slider-text h2 {font-size: 24px; font-weight: 300; color: #455A64; margin: 0; padding: 0; }
+
+.auth-slider-media{width: 100%;height: 520px;position: relative;overflow: hidden;}
+.auth-slider-media img{ width: 100%; height: 100%; object-fit: cover; }
+
+
+#auth-slider .owl-dots {position: absolute;left: 0;right: 0;bottom: 0;}
+#auth-slider .owl-dots, 
+#auth-slider .owl-nav {text-align: center;-webkit-tap-highlight-color: transparent;}
+#auth-slider .owl-dots .owl-dot {display: inline-block;zoom: 1;}
+#auth-slider .owl-dots .owl-dot span {width: 40px;height:2px;margin: 5px 5px;background:#e1dcdc;display: block;-webkit-backface-visibility: visible;transition: opacity .2s ease;border-radius:0px;}
+#auth-slider .owl-dots .owl-dot.active span, 
+#auth-slider .owl-dots .owl-dot:hover span {background: #ffdf04;}
+#auth-slider .owl-nav {width: 60px; text-align: center;   }
+#auth-slider .owl-nav button span {outline: none;font-size: 50px;background: #0679eb;color: #fff;width: 50px;height: 50px;border-radius: 50%;display: inline-block;line-height: 40px;}
+#auth-slider .owl-prev {left:-55px; top:40%; position: absolute;     outline: none;}
+#auth-slider .owl-next {right:-55px; top:40%; position: absolute;     outline: none;}
+.servicescheckbox {padding: 5px; }
+
+
